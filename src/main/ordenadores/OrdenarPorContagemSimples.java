@@ -3,7 +3,6 @@ public class OrdenarPorContagemSimples implements Ordenador{
 
     @Override
     public int[] ordene(int[] array) {
-        int[] arrayOrdenado = new int[array.length];
         boolean[] arrayContagem = new boolean[maiorValor(array) + 1];
         for (int i = 0; i < array.length; i++) {
             arrayContagem[array[i]] = true;
@@ -11,11 +10,11 @@ public class OrdenarPorContagemSimples implements Ordenador{
         int j = 0;
         for (int i = 0; i < arrayContagem.length; i++) {
             if(arrayContagem[i]) {
-                arrayOrdenado[j] = i;
+                array[j] = i;
                 j++;
             }
         }
-        return arrayOrdenado;
+        return array;
     }
     public int maiorValor(int[] array) {
         int maior = array[0];
