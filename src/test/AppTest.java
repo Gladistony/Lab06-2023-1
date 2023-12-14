@@ -44,8 +44,8 @@ public class AppTest {
         int[] array4 = { 0 };
         int[] arrayOrdenado4 = { 0 };
         assertTrue(Arrays.equals(arrayOrdenado4, o.ordene(array4)));
-        int[] array5 = { 5, 3, 2, 4, 7, 2, 0, 7 };
-        int[] arrayOrdenado5 = { 0, 2, 2, 3, 4, 5, 7, 7 };
+        int[] array5 = { 5, 3, 2, 4, 8, 1, 0, 7 };
+        int[] arrayOrdenado5 = { 0, 1, 2, 3, 4, 5, 7, 8 };
         assertTrue(Arrays.equals(arrayOrdenado5, o.ordene(array5)));
     }
 
